@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta charset="utf-8"/>
+<head>
+    <title>Secret Santa | Login</title>
+    <link rel="icon" href="icon.png">
+    <style>
+      body {
+        background-color: pink;
+        padding: 15%;
+      }
+      h1,h3,p,footer {
+        text-align: center;
+        font-family: "Arial";
+      }           
+      button {
+        background-color: #E463A7;
+      }
+    </style>
+    <script>
+        function checkPassword() {
+        var password = document.getElementById("passwordBox");
+        var passwordText = password.value;
+        var pass1 = "krishnaa"
+        var pass2 = "Krishnaa"
+        var pass3 = "KRISHNAA"
+        if((passwordText==pass1)|(passwordText==pass2)|(passwordText==pass3))
+        {
+            alert('Yes you are right, click OK to enter');
+            return true;
+        }
+        else
+        {
+          alert('Access denied. Try Again.');
+          return false;
+        }
+  }
+  </script>
+</head>
+<body>
+    <h1>A Message From Your Secret Santa<br></h1>
+    <h3><em>To access the message,guess your Santa</em></h3>
+    <p id="passP"><input id="passwordBox" type="password"/><p>
+    <p><a href="index_srinath.html" onclick="return checkPassword();">
+    <button type="button" name="button">Submit</button></p>
+    <footer><small>&copy; SecretSanta</small><br></footer>
+</body>
